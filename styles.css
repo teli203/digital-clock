@@ -22,3 +22,25 @@ body {
 #seconds {
     min-width: 5.5rem;
 }
+
+    #currentDate {
+        font-size: 2rem; /* Adjust the font size as needed */
+        margin-bottom: 93px; /* Add some space between the current date and time display */
+        text-align: center; /* Center the text */
+        color: white; /* Set text color to white */
+        font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
+        text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); /* Add text shadow */
+    }
+
+    .clock {
+        font-size: 4rem;
+        text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1);
+        display: flex;
+        gap: 1.5rem;
+        text-align: center;
+        border: 2px solid white; /* Add a white border around the clock */
+        padding: 20px; /* Add some padding inside the border */
+        border-radius: 10px; /* Add rounded corners to the border */
+    }
+    
+        
