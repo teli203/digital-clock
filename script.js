@@ -1,3 +1,15 @@
+// Get the current date //
+const currentDate = new Date();
+
+// Get the month and date //
+const month = currentDate.toLocaleString('default', { month: 'long' });
+const date = currentDate.getDate();
+
+// Display the current month and date in the HTML element //
+const currentDateElement = document.getElementById('currentDate');
+currentDateElement.textContent = `${month} ${date}`;
+
+// Get the current time //
 function updateTime() {
     const now = new Date();
     let hours = now.getHours();
