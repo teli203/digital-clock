@@ -1,13 +1,15 @@
 // Get the current date //
 const currentDate = new Date();
 
-// Get the month and date //
+// Get the month, date, & day of the week //
+const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const dayOfWeek = daysOfWeek[currentDate.getDay()];
 const month = currentDate.toLocaleString('default', { month: 'long' });
 const date = currentDate.getDate();
 
-// Display the current month and date in the HTML element //
+// Display the current month, date, & day of the week in the HTML element //
 const currentDateElement = document.getElementById('currentDate');
-currentDateElement.textContent = `${month} ${date}`;
+currentDateElement.textContent = `${dayOfWeek}, ${month} ${date}`;
 
 // Get the current time //
 function updateTime() {
