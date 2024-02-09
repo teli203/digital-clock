@@ -1,7 +1,7 @@
 // Get the current date //
 const currentDate = new Date();
 
-// Get the month, date, & day of the week //
+// Get the month, date, & day of the week by concatenating w/existing mth & date //
 const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const dayOfWeek = daysOfWeek[currentDate.getDay()];
 const month = currentDate.toLocaleString('default', { month: 'long' });
