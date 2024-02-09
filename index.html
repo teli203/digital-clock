@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Time & Date </title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"  defer></script>
+    <title>Digital Time & Date </title>             <!-- title of the wbpg -->
+    <link rel="stylesheet" href="styles.css">       <!-- linking the styles.css file to be pulled in once html is ran for pg loading -->
+    <script src="script.js"  defer></script>        <!-- linking script.js file to be pulled after html by using 'defer' after script ensures it runs after -->
 
 </head>
 <body>
     <div id ="currentDate"></div>
-    <div class="clock">
-        <span id="hours">00</span>
+    <div class="clock">                             <!-- this name: 'class' will be targeted in the stylesheet for styling -->
+        <span id="hours">00</span>                  <!-- the 'span' elements holds the actual #'s for the clock. The '00' is used for default while ran live to see it's output for display -->
+        <span>:</span>                              
+        <span id="minutes">00</span>                <!-- breaking down each part of the clock just like the 'hr' section, and watch it load live -->
         <span>:</span>
-        <span id="minutes">00</span>
-        <span>:</span>
-        <span id="seconds">00</span>
+        <span id="seconds">00</span>                <!-- use inspect on wbpg and you may see the results in console -->
         <span id="ampm"></span>
     </div>
 </body>
