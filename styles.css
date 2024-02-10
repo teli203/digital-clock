@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 body {
-    background: linear-gradient(to right, grey, black); /* Do a background color: red; to make sure styles.css pg is being called properly */
-    font-family: 'Poppins', sans-serif;                     /* pull in google fonts w/ poppins */
-    color: whitesmoke;                                    /* color of font */
-    display: flex;                                          /* display of font */
-    justify-content: center;                                /* justify content makes whatever is in the body horizontally centered */
-    align-items: center;                                    /* align items does the same vertically */
-    height: 100vh;                                          /* vh is for the view height if coding 'live' u'll see it move toward the middle of the wbpg */
-    margin: 0;                                              /* margin @ 0 removes the scroll bar */
+    background: linear-gradient(to right, grey, black); 
+    font-family: 'Poppins', sans-serif;                     
+    color: whitesmoke;                                    
+    display: flex;                                         
+    justify-content: center;                                
+    align-items: center;                                    
+    height: 100vh;                                          
+    margin: 0;                                              
 }
 
-.clock {                                                     /* targeting the name: 'clock' from html to style  */
-    font-size: 4rem;                                         /* font size for the #'s in'clock',1 rem = 16px makes it scalable for different layouts good 4 MQ's */
-    text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); /* make it more modern, 0.25 is the direction of the shadow & 0.25 rem of a whole rem 0.1 is     opacity which is the level of transparency. With a full 1 being full opacity (fully visible) & 0 being (invisible) .5 (50% semi-transparent) opacity can be added to any element, txt, image, backgrd, conatainers, section of wbpg. rem * opacity are both properties but are NOT directly related 2 one another. rem = size to font root-em root element typically in html. And opacity controls visibility of an element */
-    display: flex;                                           /* applied to 'clock' it sets the layout model for it & it's children if present. Distributing space amongst the items in that container & aligning them along the main axis and cross axis. The flex can be resized if need be w/ using justify-content or many others flex-grow, flex-shrink, flex-basis, etc */
-    gap: 1.5rem;                                            /*gap is used in conjunction w/ display: flex or grid to specify spacing between items in the flex or grid container. Similar to margins or padding, just specified to control the gaps between items themselves & not between the items & containers edge   */
-    text-align: center;   /* center text horizontally w/in its container along the inline axis */
+.clock {                                                     
+    font-size: 4rem;                                         
+    text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); 
+    display: flex;                                          
+    gap: 1.5rem;                                            
+    text-align: center;  
 }
 
-#seconds {                                                  /* this is targeting seconds so that when the #'s are changing ever sec it will reduce and expand the width of the sec span element only. Which will prevent the other elements for jumping each time it changes.  */
+#seconds {                                                  
     min-width: 5.5rem;
 }
 
-    #currentDate {                                          /* targeting the current date */
-        font-size: 2rem; /* Adjust the font size as needed */
-        margin-bottom: 93px; /* Add some space between the current date and time display */
-        text-align: center; /* Center the text */
-        color: white; /* Set text color to white */
-        font-family: 'Poppins', sans-serif; /* Apply the Poppins font */
-        text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); /* Add text shadow */
+    #currentDate {                                          
+        font-size: 2rem; 
+        margin-bottom: 93px; 
+        text-align: center; 
+        color: white; 
+        font-family: 'Poppins', sans-serif; 
+        text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); 
     }
 
     .clock {
@@ -38,9 +38,9 @@ body {
         display: flex;
         gap: 1.5rem;
         text-align: center;
-        border: 2px solid white; /* Add a white border around the clock */
-        padding: 20px; /* Add some padding inside the border */
-        border-radius: 10px; /* Add rounded corners to the border */
+        border: 2px solid white; 
+        padding: 20px; 
+        border-radius: 10px; 
     }
     
         
