@@ -10,15 +10,6 @@ body {
     height: 100vh;                                          
     margin: 0;                                              
 }
-
-.clock {                                                     
-    font-size: 4rem;                                         
-    text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); 
-    display: flex;                                          
-    gap: 1.5rem;                                            
-    text-align: center;  
-}
-
 #seconds {                                                  
     min-width: 5.5rem;
 }
@@ -32,17 +23,6 @@ body {
         text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1); 
     }
 
-    .clock {
-        font-size: 4rem;
-        text-shadow: 0.25rem 0.25rem 0.6rem rgba(255, 255, 255, 0.1);
-        display: flex;
-        gap: 1.5rem;
-        text-align: center;
-        border: 2px solid white; 
-        padding: 20px; 
-        border-radius: 10px; 
-    }
-    
     @media screen and (max-width: 1199px) {
         .clock-container {max-width: 1140px;
         }
